@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css넣기 */
+        body{
+            background-color: beige;
+        }
+        #s2{
+            color:red
+        }
+        table{
+            background-color: burlywood;
+            text-align: center;
+        }
+        td{
+            width: 70px;
+            height: 40px;
+        }
+        h1{
+            color: red;
+        }
+        .coffee{
+            color: beige;
+            width: 300px;
+            height: 200px;
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤딩태그 -->
+    <hr>
+    <div class="coffee">
+        <ul>중국음식 메뉴
+            <li>짜장면</li>
+            <li>짬뽕</li>
+            <li>유린기</li>
+        </ul>
+        <ol>중국음식 메뉴
+            <li>짜장면</li>
+            <li>짬뽕</li>
+            <li>유린기</li>
+        </ol>
+    </div>
+    <hr>
+    <img src="커피.jpg" alt="">
+    <dl class="coffee">
+        <dt>에스프레소</dt>
+        <dd>-커피의 기본,커피의 원액</dd>
+        <dt>아메리카노</dt>
+        <dd>-에스프레소에 물을 넣은 것</dd>
+        <dt>카페라떼</dt>
+        <dd>-커피에 우유를 섞은 것</dd>
+    </dl>
+    <hr>
+    <a href="http://naver.com" target="_blank">네이버</a>
+    <span id="s1">span1 태그로 구분</span> <span id="s2">span2 태그로 구분</span>
+    <span id="s3">span3 태그로 구분</span>  
+
+    <hr>
+    <!-- table 태그로 시간표만들기 -->
+    <table border="1">
+        <tr><th colspan="6">시간표</th></tr>
+        <tr>           
+            <td>시간</td> <td>월</td> <td>화</td> <td>수</td> <td>목</td> <td>금</td>
+        </tr>
+        <tr><td>9시</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+        <tr><td>10시</td> <td></td> <td></td> <td></td><td></td><td></td></tr>
+        <tr><td>11시</td> <td></td> <td rowspan="2">수학</td><td></td><td></td>  <td rowspan="2">발표와토론</td></tr>
+        <tr><td>12시</td> <td></td> <td></td> <td rowspan="3">한국영화사</td> </tr>
+        <tr><td>1시</td> <td></td> <td></td> <td></td><td></td> </tr>
+        <tr><td>2시</td> <td></td> <td rowspan="4">핀테크프로그래밍</td> <td></td><td></td> </tr>
+        <tr><td>3시</td> <td rowspan="3">핀테크보안</td>  <td rowspan="3">데이터통신</td><td>진로멘토링</td><td></td></tr>
+        <tr><td>4시</td> <td></td> <td></td> </tr>
+        <tr><td>5시</td> <td></td> <td></td></tr>
+
+    </table>
+
+
+    </body>
+    </html>
