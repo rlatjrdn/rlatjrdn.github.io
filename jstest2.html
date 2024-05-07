@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">다음에 학습할 내용은 HTML입니다.</p>
+    <button onclick="myFun()">HTML 학습을 끝냈으면 누르세요.</button>
+
+    <script>
+    function myFun(){
+        let text = document.getElementById("test").innerHTML;
+        document.getElementById("test").innerHTML =
+           text.replace("HTML","JAVASCRIPT");
+    }
+    </script>
+<p>로또숫자만들기</p>
+<script>
+        let f;
+        let n;
+        let msg=""
+        for (let i=0;i<5;i++){
+            f=(Math.random()*45)+1;
+            n= Math.floor(f);
+            msg+=n+ " "; 
+        }
+        document.write(msg+"<br>");
+ </script>
+
+<p id="lotto">로또번호</p>
+<button onclick="lotto()">로또</button>
+<script>
+    function lotto(){
+        let f;
+        let n;
+        let msg=""
+        for (let i=0;i<5;i++){
+            f=(Math.random()*45)+1;
+            n= Math.floor(f);
+            msg+=n+ " "; 
+        }
+            document.write(msg+"<br>");
+            alert("행운의 번호 : "+msg);
+     }
+
+ </script>
+
+ <script>
+    function printArray(a) {
+        document.write("[ ");
+        let sum=0;
+        for (let i = 0; i < a.length; i++){
+            document.write(a[i] + " ");
+            sum+=a[i];
+    }
+    document.write(" ] <br>",sum);
+}
+    let fruit1 = new Array("apple","banana","orange");
+    let name = ["kim","lee","park","choi"];
+    let num = [1,2,3,4,5,6,7,8,9,10];
+    printArray(fruit1);
+    printArray(name);
+    printArray(num);
+
+ </script>
+
+<script>
+    let admin = ["kimseokwoo","seokwoo","ksw"]
+    person = prompt("아이디를 입력하시오:","")
+    document.getElementById("test").innerHTML="로그인 실패";
+    for(i=0;i<admin.length;i++){
+        if(person == admin[i]){
+            document.getElementById("test").innerHTML="로그인 성공";
+            break;
+        }
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>
